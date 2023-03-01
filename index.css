@@ -1,0 +1,202 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    background-image: url(/assets/img/background.png);
+}
+
+.darkMode {
+    background-image: url(/assets/img/backgroundDark.png);
+    color: white;
+}
+
+#darkdiv {
+    display: flex;
+    justify-content: right;
+    padding-right: 3%;
+    padding-top: 1%;
+    gap: 50px;
+}
+
+.priority {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.form-check-label {
+    font-family: 'Caveat';
+    text-align: left;
+}
+
+.h1 {
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 100%;
+    padding: 1%;
+}
+
+.dateAndTime {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-right: 2%;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin-right: 2%;
+}
+
+.noteText {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#addNoteButton {
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+#clearForm {
+    margin-top: 2%;
+}
+
+#noteTextArea {
+    font-size: 16px;
+    background-image:
+        linear-gradient(0deg, transparent 5em, rgba(255, 0, 0, .2) 0, transparent 5.1em),
+        linear-gradient(rgba(0, 0, 255, .3) 1px, transparent 0);
+    background-size: 100% 2em;
+    line-height: 24pt;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.labels {
+    font-weight: 700;
+    font-size: x-large;
+    font-family: 'Caveat';
+    text-align: center;
+}
+
+.labelDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#dateLable {
+    padding-left: 22%;
+}
+
+#timeLable {
+    padding-left: 8%;
+}
+
+.notesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-bottom: 10%;
+}
+
+.notesbg {
+    background-image: url("assets/img/stickynote.png");
+    background-position: initial;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    transition: transform .2s;
+}
+
+.notesbg:hover {
+    transform: scale(1.1);
+}
+
+.fadein {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.buttonSpan {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-top: 20%;
+}
+
+.bi,
+.bi-x-circle {
+    background: none;
+    border: none;
+    visibility: hidden;
+}
+
+.notesbg:hover .bi,
+.bi-x-circle {
+    visibility: visible;
+}
+
+.textArea {
+    margin-left: 25%;
+    height: 160px;
+    width: 250px;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    color: rgb(54, 54, 233);
+}
+
+.textArea::-webkit-scrollbar {
+    display: none;
+}
+
+.secondtextArea {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 5%;
+    text-align: left;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 600;
+    color: rgb(54, 54, 233);
+}
+
+.FirstList {
+    list-style-type: none;
+}
+
+.SecondList {
+    list-style-type: none;
+}
+
+.bi-flag-fill {
+    color: red;
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: x-large;
+}
